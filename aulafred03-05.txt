@@ -1,0 +1,59 @@
+--use Fred;
+--create or alter procedure sp_escrever	
+--as
+--print 'Olá Pernambuco';
+--execute sp_escrever;
+--create or alter procedure sp_escrever
+--@texto varchar(35)
+--as 
+--print @texto;
+--execute sp_escrever 'Olá Recife';
+--create or alter procedure sp_calcular 
+--@valor1 integer, @valor2 integer
+--as
+--print 'Resultado = ' + cast(@valor1 + @valor2 as varchar);
+--execute sp_calcular 10,5;
+--create or alter procedure sp_ConsultarFuncao
+--@funcao varchar(35) = null
+--as
+--if @funcao is null
+--select * from Cadfun;
+--else 
+--select * from Cadfun where funcao = @funcao;
+--execute sp_ConsultarFuncao;
+--create or alter procedure sp_ConsultarFuncao
+--as
+--declare @funcao varchar(36)
+--set @funcao = 'Vendedor'
+--select * from Cadfun where funcao = @funcao;
+--execute sp_ConsultarFuncao;
+--create or alter procedure SP_IF
+--@nome varchar(35), @sexo char(1)
+--as
+--declare @tratamento char(5)
+--if @sexo = 'M'
+--set @tratamento = 'Sr.'
+--else 
+--set @tratamento = 'Sra.'
+--print 'Prazer' + @tratamento + @nome;
+--create procedure sp_contar
+--@limite int
+--as 
+--declare @x int
+--set @x=1
+--while (@x <= @limite)
+--	begin
+--	print @x
+--	set @x +=1
+--	end
+--create procedure SP_Inserir
+--@Limite int, 
+--as
+--declare @x int = 1
+--while (@x <= @Limite)
+--begin
+--insert into teste
+--values ('Nome ' + cast(@x as varchar))
+--set @x += 1
+--end;
+
